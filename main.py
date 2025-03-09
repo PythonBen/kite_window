@@ -116,7 +116,7 @@ def info():
                 P(s5),
                 P(s6),
                 P(s7),
-                P(A("github", href="https://github.com/PythonBen/fenetre_kite")),
+                P(A("github", href="https://github.com/PythonBen/kite_window")),
                 P(A('retour', href='/')),
                 cls="container",
                 style="padding-top: 10px;"
