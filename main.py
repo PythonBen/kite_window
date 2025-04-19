@@ -12,7 +12,7 @@ from fh_matplotlib import matplotlib2fasthtml
 class Windcalc:
     real_wind: np.ndarray
     boat_vector: np.ndarray
-    constant_radius: int = 25
+    constant_radius: int = 40
 
     @property
     def apparent_wind(self):
@@ -69,10 +69,10 @@ class Drawing:
     front_l: np.ndarray
     originx: int = 0
     originy: int = 0
-    xmin: int = -30
-    xmax: int = 30
-    ymin: int = -30
-    ymax: int = 30
+    xmin: int = -50
+    xmax: int = 50
+    ymin: int = -50
+    ymax: int = 50
     
     @matplotlib2fasthtml
     def plotting(self):
@@ -132,7 +132,7 @@ def index():
         Label('Trajectoire', Input(name='trajectory',placeholder="En °, par exemple 45° est la direction NE",type="number",step="1",min="0",required=True,default="45")),
         Label('Vitesse du rider', Input(name='rider_speed',placeholder="Vitesse en noeuds ou km/h du rider",type="number",step="1",min="1",required=True)),
             ),
-        Button("Entrez le vent réel, la direction et vitesse du rider", type="submit")
+        Button("Enter", type="submit")
             )
     return Titled("Calcul de la fenêtre de vol d'un kite",
         Div(first_form, cls="form-container"),

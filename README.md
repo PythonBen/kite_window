@@ -1,40 +1,12 @@
-# FastHTML Boilerplate
+# Affichage de la fenetre de vol d'un kite
 
-Deploy your [FastHTML](https://fastht.ml/) project to Vercel with zero configuration.
+L'utilisateur entre la vitesse du vent réel, celui ci vient du Nord (ou du haut de la figure).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/fasthtml&template=fasthtml)
+Il entre ensuite, l'angle de la trajectoire. C'est l'angle définit par rapport à l'horizontale. Ainsi 0 degree correspond à une direction plein Est. 45 degré correspond à une direction Nord Est, 90 degré correspond à une direction plein Nord, ect.
 
-_Live Example: https://fasthtml-template.vercel.app_
+Enfin, il faut entrer la vitesse du rider, ce qui permet de calculer le vent apparent et
+d'afficher la fenetre.
 
-Visit the [FastHTML documentation](https://docs.fastht.ml/) to learn more.
+Pour plus d'info, voir le code python est dans le fichier main.
+On a utilisé la librairie fasthtml ainsi que matplotlib.
 
-## Getting Started
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running Locally
-
-Start the development server on http://0.0.0.0:5001
-
-```bash
-python main.py
-```
-
-When you make changes to your project, the server will automatically reload.
-
-## Deploying to Vercel
-
-Deploy your project to Vercel with the following command:
-
-```bash
-npm install -g vercel
-vercel --prod
-```
-
-Or `git push` to your repostory with our [git integration](https://vercel.com/docs/deployments/git).
-
-To view the source code for this template, [visit the example repository](https://github.com/vercel/vercel/tree/main/examples/fasthtml).
