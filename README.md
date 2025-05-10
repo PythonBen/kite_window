@@ -10,3 +10,6 @@ d'afficher la fenetre.
 Pour plus d'info, voir le code python est dans le fichier main.
 On a utilisé la librairie fasthtml ainsi que matplotlib.
 
+Remarques: En pratique, plus le vent est léger et plus la limite avant recule. La limite 
+avant dépend aussi du kite, par exemple les ailes à caisson à haut ratio ont une limite avant plus proche de la limite théorique que celle d'une aile à boudin. 
+
