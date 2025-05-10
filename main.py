@@ -105,6 +105,9 @@ def info():
     s5 = " On trace ensuite deux autres vecteurs, la limite basse de la fenêtre de vol et le bord de la fenetre de vol"
     s6 = " Le secteur entre ces deux lignes est appelé la fenêtre de vol utile (en violet sur la figure)"
     s7 = " Pour plus d'information, voir le code source à mon adresse github"
+    s8 = " Remarques: En pratique, plus le vent est léger et plus la limite avant recule. La limite \
+           avant dépend aussi du kite, par exemple les ailes à caisson à haut ratio ont une limite \
+            avant plus proche de la limite théorique que celle d'une aile à boudin "
     
     return (
             Div(
@@ -116,6 +119,7 @@ def info():
                 P(s5),
                 P(s6),
                 P(s7),
+                P(s8),
                 P(A("github", href="https://github.com/PythonBen/kite_window")),
                 P(A('retour', href='/')),
                 cls="container",
